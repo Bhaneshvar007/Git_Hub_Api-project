@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate your marks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <form onsubmit="calculateMarks(event)" class="calculate" id="calculateForm">
+            <input class="subject" required type="number" min="0" max="100" name="maths" placeholder="Maths" id="meth">
+            <input class="subject" required type="number" min="0" max="100" name="Physics" placeholder="Physics" id="physics">
+            <input class="subject" required type="number" min="0" max="100" name="Chemistry" placeholder="Chemistry" id="chemistry">
+            <input class="subject" required type="number" min="0" max="100" name="BioLogy" placeholder="BioLogy" id="bioLogy">
+            <button id="clc-btn">Calculate</button>
+        </form>
+        <p class="resultC" id="resultel"></p>
+    </div>
+
+    <div class="content">
+        <h2>Calculate your</h2>
+        <h1>Persentage</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

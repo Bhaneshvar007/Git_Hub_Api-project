@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wraper {
+    background-image: url(./Image/moutain.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.design{
+    text-shadow: -1px -1px 0px rgb(238, 237, 237);
+}
+
+.main h2 {
+    font-size: 40px;
+}
+
+.center {
+    display: flex;
+    gap: 30px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main>h1 {
+    font-size: 40px;
+}
+
+.center h2 div {
+    color: white;
+    font-size: 32px;
+}
+
+.center h2 p {
+    color: red;
+    text-shadow: 1px 1px 0px white;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.setting-area {
+    display: flex;
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+}
+
+.setting>button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(45deg, rgb(44, 44, 252), rgb(61, 251, 61));
+}
+
+.setting-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.setting-content input {
+    padding: 6px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.setting-content button {
+    padding: 6px 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

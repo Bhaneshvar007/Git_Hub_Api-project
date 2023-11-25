@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>life timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35f2da27e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="main" id="before-ececution">
+            <h2 class="design">Kindly Enter your DOB</h2>
+        </div>
+        <div class="main" id="after-ececution">
+            <h1 class="design">How many year are you alive in the world</h1>
+            <div class="center">
+                <h2>
+                    <div id="year">00</div>
+                    <p>Year</p>
+                </h2>
+                <h2>
+                    <div id="month">00</div>
+                    <p>Mon</p>
+                </h2>
+                <h2>
+                    <div id="day">00</div>
+                    <p>Day</p>
+                </h2>
+                <h2>
+                    <div id="hour">00</div>
+                    <p>Hour</p>
+                </h2>
+                <h2>
+                    <div id="min">00</div>
+                    <p>Min</p>
+                </h2>
+                <h2>
+                    <div id="sec">00</div>
+                    <p>Sec</p>
+                </h2>
+            </div>
+        </div>
+
+        <div class="setting-area">
+            <div class="setting">
+                <button id="chooseD">Choose Date</button>
+            </div>
+            <div class="setting-content hide">
+                <input type="date" id="date">
+                <button id="Add-date-btn">Add date</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- js part -->
+    <script src="script.js"></script>
+</body>
+
+</html>

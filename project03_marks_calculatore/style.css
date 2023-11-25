@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./image/featured-image.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    height: 50vh;
+    width: 45%;
+    background-color: #555555eb;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 40px;
+}
+
+.content h1 {
+    color: #555;
+    font-size: 32px;
+}
+
+.calculate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input {
+    height: 35px;
+    width: 40%;
+    padding: 0 2rem;
+    max-width: 50vh;
+    border-radius: 10px;
+    border: 2px solid rgba(249, 243, 243, 0.406);
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+input:focus-visible {
+    border: 0;
+    outline: 2px solid blue;
+}
+
+#clc-btn {
+    height: 35px;
+    width: 150px;
+    border: 0;
+    background-color: royalblue;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#clc-btn:active {
+    background-color: rgb(15, 104, 15);
+}
+
+.resultC {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width:1250px) and (min-width:920px) {
+    .box {
+        height: 50%;
+        width: 30%;
+        padding: 10px;
+    }
+
+    .calculate {
+        gap: 10px;
+    }
+
+    input {
+        max-width: 50vh;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+
+    #clc-btn {
+        margin-top: 2px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:920px) and (min-width:680px) {
+    .box {
+        height: 55%;
+        width: 35%;
+        padding: 10px;
+    }
+
+    .calculate {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    input {
+
+        width: 47vh;
+        max-width: 42vh;
+        font-size: 15px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    #clc-btn {
+        margin-top: 2px;
+        height: 30px;
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:680px) and (min-width:500px) {
+    .box {
+        height: 58%;
+        width: 35%;
+        padding: 10px;
+    }
+
+    .calculate {
+        gap: 10px;
+    }
+
+    input {
+        width: 30vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #clc-btn {
+        margin-top: 0px;
+        height: 30px;
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:500px) and (min-width:300px) {
+    .box {
+        height: 50%;
+        width: 35%;
+        padding: 10px;
+    }
+
+    .calculate {
+        gap: 10px;
+    }
+
+    input {
+        width: 20vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    #clc-btn {
+        margin-top: 0px;
+        height: 25px;
+        width: 90px;
+        font-size: 13px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:300px) {
+    .box {
+        height: 60%;
+        width: 65%;
+    }
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 18px;
+    }
+
+    input::placeholder{
+        font-size: 10px;
+    }
+    #clc-btn {
+        margin-top: 0px;
+        height: 30px;
+        width: 100px;
+        font-size: 13px;
+    }
+}
