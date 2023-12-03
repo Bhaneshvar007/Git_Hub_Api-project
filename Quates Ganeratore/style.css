@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.774);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Heading{
+    font-size: 4vw;
+    margin: 2vw 0;
+    color: #444;
+}
+.wraper {
+    width: 30%;
+    /* height: 40%; */
+    background-color: #fff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1vw;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.wraper h1 {
+    background-color: royalblue;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    padding: .7vw 0;
+}
+
+.Quates {
+    margin: 1vw 0;
+    font-size: 1.5vw;
+}
+
+.Writer {
+    float: right;
+    margin-left: 12vw;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.btnSection button {
+    border: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin-top: 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid black;
+
+}
+
+.NewQuates {
+    background-color: royalblue;
+    color: #fff;
+}
+
+.NewQuates:active {
+    background-color: darkgreen;
+}
+
+.NewQuates:focus {
+    background-color: red;
+}
+
+@media (max-width:400px) {
+    .wraper {
+        width: 90%;
+        padding:4vw 2vw;
+    }
+
+    .Heading{
+        font-size: 7vw;
+    }
+
+    .Quates {
+        font-size: 4vw;
+        margin: 3vw 0;
+    }
+
+    .Writer {
+        font-size: 3vw;
+        margin: 3vw 0;
+        margin-left: 10rem;
+    }
+
+}
